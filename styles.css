@@ -50,6 +50,24 @@ h2 {
     font-size: medium;
 }
 
+.form-container {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    width: 150px;
+    margin-right: 10px;
+}
+
+input {
+    flex:1;
+}
+
 form label {
     font-size: small;
 }
