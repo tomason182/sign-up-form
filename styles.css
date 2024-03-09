@@ -1,20 +1,56 @@
+@font-face {
+    font-family: "great-vibes";
+    src:
+        url("fonts/greatvibes-regular-webfont.woff") format("woff"),
+        url("fonts/greatvibes-regular-webfont.woff2") format("woff2");
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "norse-bold";
+    src: url("fonts/Norse-Bold.otf") format("opentype");
+
+    font-style: normal;
+    font-weight: normal;
+}
+
 body{
     background: #242423;
 }
 
 #main-container {
     display: flex;
-    width: 66%;
+    width: 70%;
     height: 100vh;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
-
 #left-container {
     flex: 1;
     background-image: url(images/background-image.jpg);
     background-size:cover;
+}
+
+.odin {
+    background-image: url(logo/odin-lined.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    display: flex;
+    width: auto;
+    height: 10rem;
+    color: #fff;
+    background-color: rgba(0,45,45, 0.4);
+    margin-top:15rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.odin p {
+    font: 5rem "Norse-bold", sans-serif ,monospace;
+    margin-left: 2rem;
 }
 
 #right-container {
@@ -38,15 +74,9 @@ body{
 }
 
 
-/* .text-container {
-    width: 65%;
-    margin-left: 3rem;
-    position: relative;   
-} */
-
 h2 {
     font-family: sans-serif;
-    font-size: large;
+    font-size: 1rem;
     position: absolute;
     bottom: 2rem;
     max-width: 70%;
@@ -124,4 +154,15 @@ button {
     border-radius: 0.7rem;
     border: none;
 
+}
+
+#psw:invalid,
+#confpsw:invalid {
+    border: 1px solid red;
+}
+
+#psw:valid,
+#confpsw:valid {
+    
+    border: 1px solid green;
 }
