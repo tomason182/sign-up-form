@@ -4,10 +4,6 @@
     height: 100vh;
 }
 
-#left-container, #right-container {
-    /*borders only for references - should erase later*/
-    border: 2px solid #000 ;
-}
 
 #left-container {
     flex: 1;
@@ -17,4 +13,19 @@
 
 #right-container {
     flex: 2;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.top-container, .central-container, .bottom.container {
+    border: 1px solid #000;
+    flex: 1;
+    height: 100px;
+
+}
+
+.text-container {
+    width: 75%;
+    margin-left: 5rem;
 }
