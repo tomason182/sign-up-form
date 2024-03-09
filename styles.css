@@ -1,7 +1,12 @@
+body{
+    background: #242423;
+}
+
 #main-container {
     display: flex;
-    width: 100%;
+    width: 66%;
     height: 100vh;
+    margin: 0 auto;
 }
 
 
@@ -12,20 +17,39 @@
 }
 
 #right-container {
-    flex: 2;
+    flex: 1.73;
     display: flex;
     width: 100%;
     flex-direction: column;
 }
 
-.top-container, .central-container, .bottom.container {
-    border: 1px solid #000;
+.top-container, .central-container, .bottom-container {
     flex: 1;
-    height: 100px;
+    height: 50px;
 
 }
 
+.central-container {
+    background-color: #fff;
+}
+
+.top-container, .bottom-container {
+    position: relative;
+    background-color: #f8f9fa   ;
+}
+
 .text-container {
-    width: 75%;
-    margin-left: 5rem;
+    width: 65%;
+    margin-left: 3rem;
+    position: absolute;
+    top:4rem;
+   
+}
+
+h2 {
+    font-size: medium;
+}
+
+form label {
+    font-size: small;
 }
