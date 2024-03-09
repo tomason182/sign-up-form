@@ -7,6 +7,7 @@ body{
     width: 66%;
     height: 100vh;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 
@@ -31,6 +32,7 @@ body{
 
 .central-container {
     background-color: #fff;
+    box-sizing: border-box;
 }
 
 .top-container, .bottom-container {
@@ -50,24 +52,35 @@ h2 {
     font-size: medium;
 }
 
-.form-container {
-    width: 100%;
+legend {
+    font-size: large;
+    font-weight:800;
+    margin: 1rem 0 1rem 1rem;
 }
 
 .form-row {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 75%;
+}
+
+.form-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+
+input, label {
+    width: 100%;
+    flex-shrink: 1;
+    margin: 0 10px;
+    box-sizing: border-box;
 }
 
 label {
-    width: 150px;
-    margin-right: 10px;
-}
-
-input {
-    flex:1;
-}
-
-form label {
     font-size: small;
+    width: 100%;
 }
