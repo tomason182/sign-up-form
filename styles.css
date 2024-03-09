@@ -5,7 +5,7 @@
 }
 
 #left-container, #right-container {
-    /*borders only for references*/
+    /*borders only for references - should erase later*/
     border: 2px solid #000 ;
 }
 
