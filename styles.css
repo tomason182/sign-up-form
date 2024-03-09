@@ -24,8 +24,10 @@ body{
     flex-direction: column;
 }
 
-.top-container, .bottom-container {
+.top-container, .bottom-container, .central-container-main {
     flex: 1;
+    position: relative;
+    background-color: #f8f9fa;
 }
 
 
@@ -35,21 +37,17 @@ body{
     box-shadow:inset 0px -2px 1px rgba(0, 0, 0, 0.3);
 }
 
-.top-container, .bottom-container {
-    position: relative;
-    background-color: #f8f9fa;
-}
 
 .text-container {
     width: 65%;
     margin-left: 3rem;
-    position: absolute;
-    top:4rem;
-   
+    position: relative;   
 }
 
 h2 {
-    font-size: medium;
+    font-size: large;
+    position: absolute;
+    top: 0;
 }
 
 legend {
@@ -73,10 +71,14 @@ legend {
     padding: 5px 10px;
 }
 
-input {
+input,
+button {
     appearance: none;
     -webkit-appearance: none;
-    -moz-appearance: none;
+    -moz-appearance: none;   
+}
+
+input {
     border: 1px solid #ccc;
     border-radius: 3px;
     padding: 0.4rem;
@@ -99,4 +101,15 @@ label {
 .item{
     padding-top: .7rem;
     padding-left: 1rem;
+}
+
+button {
+    margin: 1.5rem 0 0 3rem;
+    padding: 0.7rem 2rem;
+    background-color: #596D48;
+    color: #fff;
+    font-size: medium;
+    font-weight:bold;
+    border-radius: 0.7rem;
+
 }
