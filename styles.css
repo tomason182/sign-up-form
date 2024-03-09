@@ -32,12 +32,12 @@ body{
 .central-container {
     background-color: #fff;
     padding: 1.2rem 0;
-    box-shadow:inset -2px -2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow:inset 0px -2px 1px rgba(0, 0, 0, 0.3);
 }
 
 .top-container, .bottom-container {
     position: relative;
-    background-color: #f8f9fa   ;
+    background-color: #f8f9fa;
 }
 
 .text-container {
