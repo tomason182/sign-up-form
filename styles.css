@@ -68,11 +68,17 @@ body{
 
 
 .central-container {
+    display: flex;
     background-color: #fff;
     padding: 1.2rem 0;
     box-shadow:inset 0px -2px 1px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
+.item {
+    max-width: 33%;
+}
 
 h2 {
     font-family: sans-serif;
@@ -88,21 +94,6 @@ legend {
     font-size: large;
     font-weight:800;
     margin: 1rem 0 1rem 1rem;
-}
-
-.form-row {
-    display: flex;
-    justify-content: space-around;
-    box-sizing: border-box;
-    width: 75%;
-}
-
-.form-column {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 5px 10px;
 }
 
 input,
